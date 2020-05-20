@@ -205,6 +205,45 @@ body._lock {
 }
 
 .header__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.menu {
+  padding: 0 0 0 3.15789%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__list li {
+  margin: 0 15px;
+}
+
+.menu__link,
+.actions-header__region {
+  font-family: "PFDin";
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+}
+
+.actions-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,10 +252,57 @@ body._lock {
           align-items: center;
 }
 
-.menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.actions-header__region {
+  padding: 0 0 0 30px;
+  line-height: 1.5;
+  background: url("../img/icons/globe.png") left no-repeat;
+}
+
+.actions-header__user {
+  margin: 0 0 0 30px;
+}
+
+.user-header__icon {
+  cursor: pointer;
+}
+
+.user-header__menu {
+  top: 78px;
+  right: 0;
+  position: absolute;
+  background-color: #1c242a;
+  padding: 20px;
+}
+
+.user-header__menu li {
+  margin: 0 0 8px 0;
+}
+
+.user-header__menu li:last-child {
+  margin: 0 0 0 0;
+}
+
+.user-header__link {
+  color: #ffffff;
+  padding: 0 0 0 30px;
+  display: inline-block;
+  line-height: 18px;
+}
+
+.user-header__link_1 {
+  background: url("../img/icons/menu/01.png") 1px center no-repeat;
+}
+
+.user-header__link_2 {
+  background: url("../img/icons/menu/02.png") left center no-repeat;
+}
+
+.user-header__link_3 {
+  background: url("../img/icons/menu/03.png") 4px center no-repeat;
+}
+
+.user-header__link_4 {
+  background: url("../img/icons/menu/04.png") left center no-repeat;
 }
 
 .page {
@@ -243,3 +329,13 @@ body._lock {
     padding: 0 10px;
   }
 }
+
+.webp .actions-header__region { background: url(../img/icons/globe.webp) left no-repeat; }
+
+.webp .user-header__link_1 { background: url(../img/icons/menu/01.webp) 1px center no-repeat; }
+
+.webp .user-header__link_2 { background: url(../img/icons/menu/02.webp) left center no-repeat; }
+
+.webp .user-header__link_3 { background: url(../img/icons/menu/03.webp) 4px center no-repeat; }
+
+.webp .user-header__link_4 { background: url(../img/icons/menu/04.webp) left center no-repeat; }
