@@ -131,5 +131,10 @@
       &_4 {
          background: url("../img/icons/menu/04.png") left center no-repeat;
       }
+      @media (min-width: 992px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
 }

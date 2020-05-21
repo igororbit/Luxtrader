@@ -311,6 +311,12 @@ body._lock {
           flex: 1 1 auto;
 }
 
+@media (min-width: 992px) {
+  .user-header__link:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
