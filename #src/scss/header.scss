@@ -55,6 +55,11 @@
       text-transform: uppercase;
       letter-spacing: 1.4px;
       color: $bg_white;
+      @media (min-width: 992px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
 }
 .icon-menu {
@@ -88,7 +93,10 @@
    // .user-header__menu
 
    &__menu {
-      top: 78px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease 0s;
+      top: 88px;
       right: 0;
       position: absolute;
       background-color: $bg_header;
@@ -98,6 +106,11 @@
          &:last-child {
             margin: 0 0 0 0;
          }
+      }
+      &._active {
+         top: 78px;
+         opacity: 1;
+         visibility: visible;
       }
    }
 

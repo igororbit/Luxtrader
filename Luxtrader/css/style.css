@@ -267,7 +267,12 @@ body._lock {
 }
 
 .user-header__menu {
-  top: 78px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  top: 88px;
   right: 0;
   position: absolute;
   background-color: #1c242a;
@@ -280,6 +285,12 @@ body._lock {
 
 .user-header__menu li:last-child {
   margin: 0 0 0 0;
+}
+
+.user-header__menu._active {
+  top: 78px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .user-header__link {
@@ -312,6 +323,11 @@ body._lock {
 }
 
 @media (min-width: 992px) {
+  .menu__link:hover,
+  .actions-header__region:hover {
+    text-decoration: underline;
+  }
+
   .user-header__link:hover {
     text-decoration: underline;
   }
