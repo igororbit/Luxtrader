@@ -407,7 +407,7 @@ body._lock {
     left: 0;
     top: 0;
     overflow: auto;
-    padding: 100px 0 20px 0;
+    padding: 130px 0 20px 0;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease 0s;
@@ -498,7 +498,7 @@ body._lock {
   }
 
   .actions-header__region {
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
     display: inline-block;
     padding: 0 0 0 30px;
   }
