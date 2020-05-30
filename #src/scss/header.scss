@@ -63,6 +63,7 @@
          opacity: 0;
          visibility: hidden;
          transition: all 0.3s ease 0s;
+         text-align: center;
          &::after {
             content: "";
             //display: none;
@@ -90,7 +91,7 @@
       }
       @media (max-width: $md3+px) {
          display: block;
-         text-align: center;
+
          li {
             margin: 0 0 30px 0;
             &:last-child {
@@ -160,13 +161,13 @@
 }
 .actions-header {
    display: flex;
-   position: relative;
-   z-index: 2;
    align-items: center;
 
    // .actions-header__region
 
    &__region {
+      position: relative;
+      z-index: 2;
       @extend .menu__link;
       padding: 0 0 0 30px;
       line-height: 1.5;
@@ -177,6 +178,14 @@
          padding: 0 0 0 0;
          span {
             display: none;
+         }
+      }
+      @media (max-width: $md3+px) {
+         margin: 20px 0 0 0;
+         display: inline-block;
+         padding: 0 0 0 30px;
+         span {
+            display: inline-block;
          }
       }
    }
@@ -194,6 +203,8 @@
    // .user-header__icon
 
    &__icon {
+      position: relative;
+      z-index: 2;
       cursor: pointer;
    }
 
@@ -208,11 +219,15 @@
       position: absolute;
       background-color: $bg_header;
       padding: 20px;
+      min-width: 176px;
       li {
          margin: 0 0 8px 0;
          &:last-child {
             margin: 0 0 0 0;
          }
+      }
+      @media (max-width: $md3+px) {
+         width: 100%;
       }
       &._active {
          top: 78px;
