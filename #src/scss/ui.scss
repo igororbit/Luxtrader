@@ -1,0 +1,31 @@
+.title {
+   // .title__item
+
+   &__item {
+      font-family: "Ceremonious";
+      font-size: 40px;
+      color: $bg_gold;
+      margin: 0px 0px 32px/40px * 1em 0px;
+   }
+
+   // .title__main
+
+   &__main {
+      font-family: "PFDin";
+      letter-spacing: 5.25px;
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 500;
+      &_regular {
+         font-weight: 400;
+      }
+      &_w {
+         color: $bg_white;
+      }
+   }
+
+   // .title__text
+
+   &__text {
+   }
+}
