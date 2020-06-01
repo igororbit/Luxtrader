@@ -1,4 +1,5 @@
 .main-slider {
+	position: relative;
 	// .main-slider__body
 
 	&__body {
@@ -12,6 +13,21 @@
 	// .main-slider__control
 
 	&__control {
+		position: absolute;
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		bottom: 0px;
+		transform: translate(-50%, 50%);
+		&::after {
+			content: "";
+			background-color: $bg_white;
+			//position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
 	}
 }
 .item-main-slider {
@@ -31,16 +47,6 @@
 	&__container {
 	}
 
-	// .item-main-slider__bg
-
-	&__bg {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
-
 	// .item-main-slider__text
 
 	&__text {
@@ -57,5 +63,35 @@
 
 	&__btn {
 		margin: 55px 0 0 0;
+	}
+
+	// .item-main-slider__bg
+
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+.control-main-slider {
+	// .control-main-slider__arrow
+
+	&__arrow {
+		// .control-main-slider__arrow_prev
+
+		&_prev {
+		}
+
+		// .control-main-slider__arrow_next
+
+		&_next {
+		}
+	}
+
+	// .control-main-slider__decor
+
+	&__decor {
 	}
 }
