@@ -1,3 +1,19 @@
+
+
+
+let user__icon = document.querySelector('.user-header__icon');
+user__icon.addEventListener("click", function (e) {
+   let user_menu = document.querySelector('.user-header__menu');
+   user_menu.classList.toggle('_active');
+});
+document.documentElement.addEventListener("click", function (e) {
+   if (!e.target.closest('.user-header')) {
+      let user_menu = document.querySelector('.user-header__menu');
+      user_menu.classList.remove('_active');
+   }
+});
+
+
 function testWebP(callback) {
 
     var webP = new Image();
@@ -15,20 +31,6 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
-
-let user__icon = document.querySelector('.user-header__icon');
-user__icon.addEventListener("click", function (e) {
-   let user_menu = document.querySelector('.user-header__menu');
-   user_menu.classList.toggle('_active');
-});
-document.documentElement.addEventListener("click", function (e) {
-   if (!e.target.closest('.user-header')) {
-      let user_menu = document.querySelector('.user-header__menu');
-      user_menu.classList.remove('_active');
-   }
-});
-
-
 "use strict";
 
 function email_test(input) {

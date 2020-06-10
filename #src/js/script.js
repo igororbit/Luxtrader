@@ -1,6 +1,8 @@
+
+
+@@include('files/#header/user-header__menu.js')
+@@include('files/#header/click_close.js')
+
+
 @@include('files/webpcss.js')
-@@include('files/user-header__menu.js')
-@@include('files/click_close.js')
-
-
-@@include('files/js/app.js')
+@@include('files/app.js')
