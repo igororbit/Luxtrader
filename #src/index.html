@@ -2,20 +2,20 @@
 <html lang="ru">
 
 <head>
-    @@include('_head.html',{"title": "Главная"})
+    @@include('html/1_head/_head.html',{"title": "Главная"})
 </head>
 
 <body>
 
     <div class="wrapper">
-        @@include('_header.html',{})
+        @@include('html/2_header/_header.html',{})
         <main class="page">
-            @@include('_main-slider.html',{})
+            @@include('html/2_header/_main-slider.html',{})
         </main>
-        @@include('_footer.html',{})
+        @@include('html/3_footer/_footer.html',{})
     </div>
     <!-- @@include "_popup.html" -->
-    @@include('_js.html',{})
+    @@include('html/4_js/_js.html',{})
 
 
 </body>
