@@ -1,12 +1,13 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .title {
+   text-align: center;
    // .title__item
 
    &__item {
       font-family: "Ceremonious";
       font-size: 40px;
       color: $bg_gold;
-      margin: 0px 0px 32px/40px * 1em 0px;
+      margin: 0px 0px 20px/40px * 1em 0px;
    }
 
    // .title__main
@@ -15,18 +16,23 @@
       font-family: "PFDin";
       letter-spacing: 5.25px;
       font-size: 35px;
+      line-height: calc(40 / 35);
       text-transform: uppercase;
       font-weight: 500;
       // .title__main_w
 
+      &_regular {
+         font-weight: 400;
+      }
+      // .title__main_regular
+
       &_w {
          color: $bg_white;
       }
+      // .title__main_W
 
-      // .title__main_regular
-
-      &_regular {
-         font-weight: 400;
+      @media (max-width: $md3+px) {
+         font-size: 30px;
       }
    }
 }

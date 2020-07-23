@@ -285,27 +285,32 @@ body._lock {
   width: 100%;
 }
 
+.title {
+  text-align: center;
+}
+
 .title__item {
   font-family: "Ceremonious";
   font-size: 40px;
   color: #bb9c66;
-  margin: 0px 0px 0.8em 0px;
+  margin: 0px 0px 0.5em 0px;
 }
 
 .title__main {
   font-family: "PFDin";
   letter-spacing: 5.25px;
   font-size: 35px;
+  line-height: calc(40 / 35);
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.title__main_w {
-  color: #ffffff;
-}
-
 .title__main_regular {
   font-weight: 400;
+}
+
+.title__main_w {
+  color: #ffffff;
 }
 
 .ibg {
@@ -1225,6 +1230,11 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 
+.main-slider__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .main-slider__control {
   position: absolute;
   left: 50%;
@@ -1268,6 +1278,7 @@ button.swiper-pagination-bullet {
 .item-main-slider__content {
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 
 .item-main-slider__text {
@@ -1335,6 +1346,10 @@ button.swiper-pagination-bullet {
   }
 }
 
+.lots {
+  padding: 85px 0 63px 0;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1387,6 +1402,10 @@ button.swiper-pagination-bullet {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .title__main {
+    font-size: 30px;
   }
 
   .header__container {

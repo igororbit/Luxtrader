@@ -8,6 +8,7 @@
 	// .main-slider__item
 
 	&__item {
+		flex-shrink: 0;
 	}
 
 	// .main-slider__control
@@ -45,6 +46,7 @@
 	&__content {
 		position: relative;
 		z-index: 2;
+		height: 100%;
 	}
 
 	// .item-main-slider__container
