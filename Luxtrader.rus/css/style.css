@@ -419,6 +419,10 @@ body._lock {
           flex: 0 0 145px;
 }
 
+.block-decor__icon img {
+  max-width: 100%;
+}
+
 .ibg {
   position: relative;
 }
@@ -1456,6 +1460,87 @@ button.swiper-pagination-bullet {
   padding: 85px 0 63px 0;
 }
 
+.lots__header {
+  margin: 0 0 40px 0;
+}
+
+.control-slider-lots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control-slider-lots__arrow {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.control-slider-lots__arrow span {
+  background: url("/img/lots/icon/sl-arrow.png") 0 0 no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 108px;
+          flex: 0 0 108px;
+  width: 108px;
+  height: 35px;
+}
+
+.control-slider-lots__arrow::after {
+  content: "";
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px #bb9c66;
+}
+
+.control-slider-lots__arrow:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.control-slider-lots__arrow:last-child span {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.control-slider-lots__link {
+  background: url("/img/lots/icon/circle.png") 0 0 no-repeat;
+  width: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 21px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "PFDin";
+  margin: 0 20px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1512,6 +1597,12 @@ button.swiper-pagination-bullet {
 
   .title__main {
     font-size: 30px;
+  }
+
+  .block-decor__icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95px;
+            flex: 0 0 95px;
   }
 
   .header__container {
@@ -1659,3 +1750,7 @@ button.swiper-pagination-bullet {
 .webp .user-header__link_4 { background: url(../img/icons/menu/04.webp) left center no-repeat; }
 
 .webp .control-main-slider__arrow { background: url(../img/icons/sl-arrow.webp) 0 0 no-repeat; }
+
+.webp .control-slider-lots__arrow span { background: url(/img/lots/icon/sl-arrow.webp) 0 0 no-repeat; }
+
+.webp .control-slider-lots__link { background: url(/img/lots/icon/circle.webp) 0 0 no-repeat; }

@@ -1,17 +1,72 @@
 .lots {
    padding: 85px 0 63px 0;
    // .lots__container
-
    &__container {
    }
-
    // .lots__header
-
    &__header {
+      margin: 0 0 40px 0;
    }
-
    // .lots__slider
-
    &__slider {
+   }
+}
+
+.slider-lots {
+   // .slider-lots__body
+   &__body {
+   }
+   // .slider-lots__slide
+   &__slide {
+   }
+   // .slider-lots__control
+   &__control {
+   }
+}
+.control-slider-lots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   // .control-slider-lots__arrow
+   &__arrow {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      span {
+         background: url("/img/lots/icon/sl-arrow.png") 0 0 no-repeat;
+         flex: 0 0 108px;
+         width: 108px;
+         height: 35px;
+      }
+      &::after {
+         content: "";
+         margin: 0 5px;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         border: solid 1px $bg_gold;
+      }
+      &:last-child {
+         flex-direction: row-reverse;
+         span {
+            transform: rotate(-180deg);
+         }
+      }
+   }
+   // .control-slider-lots__link
+   &__link {
+      background: url("/img/lots/icon/circle.png") 0 0 no-repeat;
+      width: 100px;
+      flex: 0 0 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 21px;
+      color: $bg_black;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "PFDin";
+      margin: 0 20px;
    }
 }

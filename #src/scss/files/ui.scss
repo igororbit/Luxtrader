@@ -2,16 +2,13 @@
 .title {
    text-align: center;
    // .title__item
-
    &__item {
       font-family: "Ceremonious";
       font-size: 40px;
       color: $bg_gold;
       margin: 0px 0px 20px/40px * 1em 0px;
    }
-
    // .title__main
-
    &__main {
       font-family: "PFDin";
       letter-spacing: 5.25px;
@@ -19,18 +16,15 @@
       line-height: calc(40 / 35);
       text-transform: uppercase;
       font-weight: 500;
-      // .title__main_w
 
+      // .title__main_regular
       &_regular {
          font-weight: 400;
       }
-      // .title__main_regular
-
+      // .title__main_w
       &_w {
          color: $bg_white;
       }
-      // .title__main_W
-
       @media (max-width: $md3+px) {
          font-size: 30px;
       }
@@ -41,13 +35,10 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .block-header {
    // .block-header__title
-
    &__title {
       margin: 0 0 20px 0;
    }
-
    // .block-header__decor
-
    &__decor {
    }
 }
@@ -55,7 +46,6 @@
    display: flex;
    align-items: center;
    // .block-decor__items
-
    &__items {
       flex: 1 1 auto;
       display: flex;
@@ -107,12 +97,16 @@
          }
       }
    }
-
    // .block-decor__icon
-
    &__icon {
       text-align: center;
       flex: 0 0 145px;
+      img {
+         max-width: 100%;
+      }
+      @media (max-width: $md3+px) {
+         flex: 0 0 95px;
+      }
    }
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
