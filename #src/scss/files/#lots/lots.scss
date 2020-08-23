@@ -15,9 +15,12 @@
 .slider-lots {
    // .slider-lots__body
    &__body {
+      overflow: hidden;
+      margin: 0 -50px;
    }
    // .slider-lots__slide
    &__slide {
+      padding: 0 50px;
    }
    // .slider-lots__control
    &__control {

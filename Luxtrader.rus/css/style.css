@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Ceremonious";
+  font-family: "CeremoniousOne";
   font-display: swap;
   src: url("../fonts/CeremoniousOne.woff") format("woff"), url("../fonts/CeremoniousOne.woff2") format("woff2");
   font-weight: 400;
@@ -23,9 +23,25 @@
 }
 
 @font-face {
-  font-family: "Harbell";
+  font-family: "Harbell_Personal_Use";
   font-display: swap;
   src: url("../fonts/Harbell_Personal_Use.woff") format("woff"), url("../fonts/Harbell_Personal_Use.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IdealistSans";
+  font-display: swap;
+  src: url("../fonts/IdealistSans.woff") format("woff"), url("../fonts/IdealistSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BravoRGRegular";
+  font-display: swap;
+  src: url("../fonts/BravoRGRegular.woff") format("woff"), url("../fonts/BravoRGRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -49,24 +65,8 @@
 @font-face {
   font-family: "PTSans";
   font-display: swap;
-  src: url("../fonts/PTSans-Italic.woff") format("woff"), url("../fonts/PTSans-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "BravoRGRegular";
-  font-display: swap;
-  src: url("../fonts/BravoRGRegular.woff") format("woff"), url("../fonts/BravoRGRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IdealistSans";
-  font-display: swap;
-  src: url("../fonts/IdealistSans.woff") format("woff"), url("../fonts/IdealistSans.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/PTSans-Bold.woff") format("woff"), url("../fonts/PTSans-Bold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -81,8 +81,16 @@
 @font-face {
   font-family: "PTSans";
   font-display: swap;
-  src: url("../fonts/PTSans-Bold.woff") format("woff"), url("../fonts/PTSans-Bold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("../fonts/PTSans-Italic.woff") format("woff"), url("../fonts/PTSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  font-display: swap;
+  src: url("../fonts/PTSans-Narrow.woff") format("woff"), url("../fonts/PTSans-Narrow.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -281,6 +289,14 @@ body._lock {
   width: 100%;
 }
 
+.btn_big .btn__body span {
+  font-size: 21px;
+  color: #000000;
+  font-family: "PFDin";
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
 .btn._fw {
   width: 100%;
 }
@@ -298,6 +314,7 @@ body._lock {
 
 .title__main {
   font-family: "PFDin";
+  font-weight: 400;
   letter-spacing: 5.25px;
   font-size: 35px;
   line-height: calc(40 / 35);
@@ -421,6 +438,78 @@ body._lock {
 
 .block-decor__icon img {
   max-width: 100%;
+}
+
+.lot__header {
+  position: relative;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.lot__image {
+  display: block;
+  height: 250px;
+  border: 3px solid #bb9c66;
+}
+
+.lot__title {
+  font-size: 21px;
+  line-height: calc(25 / 21);
+  font-family: "PFDin";
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.timer-lot {
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 72px;
+  height: 72px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2px 0 0 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.timer-lot div {
+  position: relative;
+  z-index: 2;
+}
+
+.timer-lot::before {
+  content: "";
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.timer-lot__icon {
+  margin: 0 0 5px 0;
+}
+
+.timer-lot__item {
+  font-size: 18px;
+  font-family: "PTSans";
+  font-weight: 500;
 }
 
 .ibg {
@@ -1392,6 +1481,8 @@ button.swiper-pagination-bullet {
 }
 
 .item-main-slider__text {
+  font-family: "PTSans";
+  font-weight: 500;
   max-width: 700px;
   margin: 25px auto 0px auto;
   color: #ffffff;
@@ -1462,6 +1553,15 @@ button.swiper-pagination-bullet {
 
 .lots__header {
   margin: 0 0 40px 0;
+}
+
+.slider-lots__body {
+  overflow: hidden;
+  margin: 0 -50px;
+}
+
+.slider-lots__slide {
+  padding: 0 50px;
 }
 
 .control-slider-lots {
