@@ -8908,7 +8908,7 @@ var main_slider = new Swiper('.main-slider__body', {
 });
 
 
-var main_slider = new Swiper('.slider-lots__body', {
+var lots_slider = new Swiper('.slider-lots__body', {
 	/*
 	effect: 'fade',
 	autoplay: {

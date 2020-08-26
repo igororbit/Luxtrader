@@ -114,6 +114,10 @@
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .lot {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   text-align: center;
    // .lot__header
    &__header {
       position: relative;
@@ -123,7 +127,8 @@
    // .lot__image
    &__image {
       display: block;
-      height: 250px;
+      //height: 250px;
+      padding: 0 0 96% 0;
       border: 3px solid $bg_gold;
    }
    // .lot__timer
@@ -133,10 +138,13 @@
    &__title {
       font-size: 21px;
       line-height: calc(25 / 21);
-      font-family: "PFDin";
       font-weight: 500;
       color: $bg_black;
       text-transform: uppercase;
+      font-family: "PFDin";
+      flex: 1 1 auto;
+      position: relative;
+      //z-index: 2;
    }
    // .lot__info
    &__info {

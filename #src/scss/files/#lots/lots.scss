@@ -17,6 +17,12 @@
    &__body {
       overflow: hidden;
       margin: 0 -50px;
+      .swiper-wrapper {
+         align-items: stretch;
+         .swiper-slide {
+            height: auto;
+         }
+      }
    }
    // .slider-lots__slide
    &__slide {

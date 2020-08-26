@@ -440,6 +440,18 @@ body._lock {
   max-width: 100%;
 }
 
+.lot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
 .lot__header {
   position: relative;
   text-align: center;
@@ -448,17 +460,21 @@ body._lock {
 
 .lot__image {
   display: block;
-  height: 250px;
+  padding: 0 0 96% 0;
   border: 3px solid #bb9c66;
 }
 
 .lot__title {
   font-size: 21px;
   line-height: calc(25 / 21);
-  font-family: "PFDin";
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
+  font-family: "PFDin";
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
 }
 
 .timer-lot {
@@ -1558,6 +1574,16 @@ button.swiper-pagination-bullet {
 .slider-lots__body {
   overflow: hidden;
   margin: 0 -50px;
+}
+
+.slider-lots__body .swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.slider-lots__body .swiper-wrapper .swiper-slide {
+  height: auto;
 }
 
 .slider-lots__slide {
