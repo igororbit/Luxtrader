@@ -474,7 +474,8 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  position: relative;
+  z-index: 2;
+  margin: 0 0 1.28571em 0;
 }
 
 .timer-lot {
@@ -525,6 +526,109 @@ body._lock {
 .timer-lot__item {
   font-size: 18px;
   font-family: "PTSans";
+  font-weight: 500;
+}
+
+.info-lot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 35px 0;
+}
+
+.info-lot__statistic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-lot__icon {
+  height: 17.5px;
+  width: 17.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 0 8px 0;
+}
+
+.info-lot__icon picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.info-lot__icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #000000;
+}
+
+.info-lot__value {
+  font-size: 14px;
+  font-family: "PTSans";
+  font-weight: 500;
+  border-bottom: 1px solid #bb9c66;
+  padding: 0 0 5px 0;
+  width: 100%;
+}
+
+.info-lot__current-bet {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.current-bet-info-lot {
+  padding: 5px 0;
+}
+
+.current-bet-info-lot__label {
+  font-family: "PTSans";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.current-bet-info-lot__value {
+  font-family: "BravoRG";
+  font-size: 50px;
+}
+
+.current-bet-info-lot__currency {
+  font-family: "PTSans";
+  font-size: 14px;
   font-weight: 500;
 }
 
