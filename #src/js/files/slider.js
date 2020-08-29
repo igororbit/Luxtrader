@@ -111,16 +111,19 @@ var lots_slider = new Swiper('.slider-lots__body', {
       nextEl: '.control-slider-lots__arrow_next',
       prevEl: '.control-slider-lots__arrow_prev'
    },
-   /*
+
    breakpoints: {
       320: {
-         autoHeight: true
+         slidesPerView: 1,
+      },
+      550: {
+         slidesPerView: 2,
       },
       768: {
-         autoHeight: false
+         slidesPerView: 3,
       }
    },
-   */
+
    on: {
       lazyImageReady: function lazyImageReady() {
          ibg();

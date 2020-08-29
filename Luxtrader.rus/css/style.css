@@ -306,7 +306,7 @@ body._lock {
 }
 
 .title__item {
-  font-family: "Ceremonious";
+  font-family: "CeremoniousOne";
   font-size: 40px;
   color: #bb9c66;
   margin: 0px 0px 0.5em 0px;
@@ -314,7 +314,6 @@ body._lock {
 
 .title__main {
   font-family: "PFDin";
-  font-weight: 400;
   letter-spacing: 5.25px;
   font-size: 35px;
   line-height: calc(40 / 35);
@@ -474,8 +473,20 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  position: relative;
   z-index: 2;
   margin: 0 0 1.28571em 0;
+}
+
+.lot__btn {
+  margin: 0 25px;
+}
+
+.lot__btn .btn__body span {
+  padding: 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .timer-lot {
@@ -568,7 +579,7 @@ body._lock {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin: 0 0 8px 0;
+  margin: 3px 0 12px 0;
 }
 
 .info-lot__icon picture {
@@ -612,18 +623,41 @@ body._lock {
 }
 
 .current-bet-info-lot {
-  padding: 5px 0;
+  padding: 0 5px;
+  position: relative;
+}
+
+.current-bet-info-lot::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  border: 1px solid #bb9c66;
+  margin: 3px 0 0 0;
+}
+
+.current-bet-info-lot div {
+  position: relative;
+  z-index: 2;
 }
 
 .current-bet-info-lot__label {
   font-family: "PTSans";
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.79;
 }
 
 .current-bet-info-lot__value {
   font-family: "BravoRG";
   font-size: 50px;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .current-bet-info-lot__currency {
@@ -1677,7 +1711,7 @@ button.swiper-pagination-bullet {
 
 .slider-lots__body {
   overflow: hidden;
-  margin: 0 -50px;
+  margin: 0 -50px 50px;
 }
 
 .slider-lots__body .swiper-wrapper {
@@ -1714,13 +1748,17 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .control-slider-lots__arrow span {
-  background: url("/img/lots/icon/sl-arrow.png") 0 0 no-repeat;
+  background: url("/img/lots/icon/sl-arrow.png") left no-repeat;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 108px;
           flex: 0 0 108px;
+  overflow: hidden;
   width: 108px;
   height: 35px;
 }
@@ -1783,6 +1821,10 @@ button.swiper-pagination-bullet {
     height: 100%;
   }
 
+  .lot__title:hover {
+    text-decoration: underline;
+  }
+
   .menu__link:hover,
   .actions-header__region:hover {
     text-decoration: underline;
@@ -1796,6 +1838,30 @@ button.swiper-pagination-bullet {
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
+  }
+}
+
+@media (max-width: 975px) {
+  .lot__title {
+    font-size: 18px;
+  }
+
+  .info-lot__current-bet {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+
+  .current-bet-info-lot {
+    padding: 0 10px;
+  }
+
+  .current-bet-info-lot__value {
+    font-size: 35px;
+  }
+
+  .slider-lots__body {
+    margin: 0 -50px 50px;
   }
 }
 
@@ -1969,6 +2035,14 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 430px) {
+  .control-slider-lots__arrow span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+  }
+}
+
 .webp .actions-header__region { background: url(../img/icons/globe.webp) left no-repeat; }
 
 .webp .user-header__link_1 { background: url(../img/icons/menu/01.webp) 1px center no-repeat; }
@@ -1981,6 +2055,6 @@ button.swiper-pagination-bullet {
 
 .webp .control-main-slider__arrow { background: url(../img/icons/sl-arrow.webp) 0 0 no-repeat; }
 
-.webp .control-slider-lots__arrow span { background: url(/img/lots/icon/sl-arrow.webp) 0 0 no-repeat; }
+.webp .control-slider-lots__arrow span { background: url(/img/lots/icon/sl-arrow.webp) left no-repeat; }
 
 .webp .control-slider-lots__link { background: url(/img/lots/icon/circle.webp) 0 0 no-repeat; }
