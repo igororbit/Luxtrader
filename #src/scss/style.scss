@@ -86,6 +86,7 @@ body {
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 @import "files/forms.scss";
+@import "files/forms_2.scss";
 @import "files/ui.scss";
 @import "libs/swiper.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
@@ -104,6 +105,8 @@ body {
 @import "files/#lots/lots.scss";
 @import "files/#categories/categories.scss";
 @import "files/#services/services.scss";
+@import "files/#quotes/quotes.scss";
+@import "files/#info/info.scss";
 @import "files/footer.scss";
 @import "files/home.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

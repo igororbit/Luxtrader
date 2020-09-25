@@ -1,11 +1,14 @@
-//</ОСНОВНОЙ БЛОК>====================================================================================================
-
-//<ОСНОВНОЙ БЛОК>====================================================================================================
 .categories {
    margin: 0 0 70px 0;
+   @media (max-width: 767px) {
+      margin: 0 0 35px 0;
+   }
    // .categories__items
    &__items {
       margin: 0 0 85px 0;
+      @media (max-width: 767px) {
+         margin: 0 0 0px 0;
+      }
    }
    // .categories__container
    &__container {
@@ -169,7 +172,19 @@
          left: 0;
          width: 85px;
          height: 12px;
+         @media (max-width: 767px) {
+            display: none;
+         }
       }
+      @media (max-width: 767px) {
+         padding: 10px 0 25px 0;
+         background: none;
+      }
+   }
+}
+.webp .text-categories__body {
+   @media (max-width: 767px) {
+      background: none !important;
    }
 }
 

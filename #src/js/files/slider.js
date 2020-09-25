@@ -34,13 +34,13 @@ if (sliders) {
 function sliders_bild_callback(params) { }
 
 var main_slider = new Swiper('.main-slider__body', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		  delay: 3000,
-		  disableOnInteraction: false,
-	},
-	*/
+   /*
+   effect: 'fade',
+   autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+   },
+   */
    observer: true,
    observeParents: true,
    slidesPerView: 1,
@@ -83,13 +83,13 @@ var main_slider = new Swiper('.main-slider__body', {
 
 
 var lots_slider = new Swiper('.slider-lots__body', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		  delay: 3000,
-		  disableOnInteraction: false,
-	},
-	*/
+   /*
+   effect: 'fade',
+   autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+   },
+   */
    observer: true,
    observeParents: true,
    slidesPerView: 3,
@@ -121,6 +121,55 @@ var lots_slider = new Swiper('.slider-lots__body', {
       },
       768: {
          slidesPerView: 3,
+      }
+   },
+
+   on: {
+      lazyImageReady: function lazyImageReady() {
+         ibg();
+      }
+   }
+   // And if we need scrollbar
+   //scrollbar: {
+   //	el: '.swiper-scrollbar',
+   //},
+
+});
+var quotes_slider = new Swiper('.slider-quotes__body', {
+
+   effect: 'fade',
+   /* autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   }, */
+
+   observer: true,
+   observeParents: true,
+   slidesPerView: 1,
+   spaceBetween: 0,
+   //autoHeight: true,
+   speed: 1000,
+   //touchRatio: 0,
+   //simulateTouch: false,
+   loop: true,
+   //preloadImages: false,
+   //lazy: true,
+   // Dotts
+   //pagination: {
+   //	el: '.slider-quality__pagging',
+   //	clickable: true,
+   //},
+   // Arrows
+   navigation: {
+      nextEl: '.control-slider-quotes__circle'
+   },
+
+   breakpoints: {
+      320: {
+         autoHeight: true,
+      },
+      570: {
+         autoHeight: false,
       }
    },
 
